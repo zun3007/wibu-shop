@@ -104,6 +104,7 @@ app.use((error, req, res, next) => {
   return res.redirect('/500');
 });
 
+// Connect to database!
 mongoose
   .connect(MONGODB_URI)
   .then(() => {
